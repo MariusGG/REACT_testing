@@ -1,9 +1,10 @@
-import React, { component } from 'react';
-
-class App extends component {
+import React, { Component } from 'react';
+import MessageForm from './MessageForm';
+class App extends Component {
   render() {
     return (
       <div>
+      <MessageForm />
       </div>
     );
   }

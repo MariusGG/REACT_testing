@@ -1,6 +1,6 @@
 describe('Creating a message', () => {
   it('Displays the message in the list', () => {
-    cy.visit('http://localhost:3000'):
+    cy.visit('http://localhost:3000');
 
     cy.get('[data-test="messageText"]')
     .type('New message');
@@ -11,6 +11,6 @@ describe('Creating a message', () => {
     cy.get('[data-tes="messageText"]')
     .should('have.value', '');
 
-    cy.contain('New message');
+    cy.contains('New message');
   });
 });
